@@ -1,27 +1,29 @@
 from random import randint
 
+'''Проверка индентичности введенного числа с числом компьютера'''
 
-def guessing_number():
 
-    computer_guess = randint(1, 30)  # компьютер выдает рандомное число
-    number_person = int(input("Введите натуральное число: "))
-    count = 1
+def guessing_number(number_person):
 
-    while True:
-
-        '''Проверка индентичности введенного числа с числом компьютера'''
-        if computer_guess != number_person:
+    sum = 0
+    '''Делает 1000 попыток и выводит за сколько попыток угадал алгоритм'''
+    '''И угадывает средние значение этих попыток'''
+    for number in range(1, 1001):
+        computer_guess = randint(1, 100)  # компьютер выдает рандомное число
+        attempt = 0
+        while computer_guess != number_person:
             if computer_guess < number_person:
-                count += 1
+                attempt += 1
                 computer_guess += 1
-                print(f'Это наверное число: {computer_guess}')
-            elif computer_guess < number_person:
-                count += 1
+            elif computer_guess > number_person:
+                attempt += 1
                 computer_guess -= 1
-                print(f'Это наверное число: {computer_guess}')
-        else:
-            break
+            else:
+                break
 
-    return f"Было сделано попыток {count}."  # Общие число попыток
+        print(f"Было сделано попыток {attempt}")  # Общие число попыток
+        sum += attempt
 
-print(guessing_number())
+    print(f'Средние значение угадывания: {sum / 1000}')
+
+guessing_number(20)
