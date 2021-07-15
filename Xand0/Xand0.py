@@ -33,7 +33,40 @@ def Game():
                     player_1 = input('Введите цифру клетки для X (1-9): ')
                     filter_references.add(player_1)
                     if type(int(player_1)):
-                        if len(filter_references) == pass_1:
+                        if int(player_1) < 1 or int(player_1) > 9:
+                            filter_references.remove(player_1)
+                            print("Введенное число находится")
+                            print('за пределы нумерации.')
+                        elif len(filter_references) == pass_1:
+                            '''Логика для замены клеток на X'''
+
+                            if player_1 == table_str1[0][1:2]:
+                                table_str1.pop(int(player_1) - 1)
+                                table_str1.insert(int(player_1) - 1, X)
+                            elif player_1 == table_str1[1][1:2]:
+                                table_str1.pop(int(player_1) - 1)
+                                table_str1.insert(int(player_1) - 1, X)
+                            elif player_1 == table_str1[2][1:2]:
+                                table_str1.pop(int(player_1) - 1)
+                                table_str1.insert(int(player_1) - 1, X)
+                            elif player_1 == table_str2[0][1:2]:
+                                table_str2.pop(int(player_1) - 4)
+                                table_str2.insert(int(player_1) - 4, X)
+                            elif player_1 == table_str2[1][1:2]:
+                                table_str2.pop(int(player_1) - 4)
+                                table_str2.insert(int(player_1) - 4, X)
+                            elif player_1 == table_str2[2][1:2]:
+                                table_str2.pop(int(player_1) - 4)
+                                table_str2.insert(int(player_1) - 4, X)
+                            elif player_1 == table_str3[0][1:2]:
+                                table_str3.pop(int(player_1) - 7)
+                                table_str3.insert(int(player_1) - 7, X)
+                            elif player_1 == table_str3[1][1:2]:
+                                table_str3.pop(int(player_1) - 7)
+                                table_str3.insert(int(player_1) - 7, X)
+                            elif player_1 == table_str3[2][1:2]:
+                                table_str3.pop(int(player_1) - 7)
+                                table_str3.insert(int(player_1) - 7, X)
                             pass_1 += 2
                             break
                         else:
@@ -41,40 +74,6 @@ def Game():
                 except ValueError or KeyError:
                     print("Вы ввели либо не целое число,либо не число.")
                     filter_references.remove(player_1)
-
-            if int(player_1) < 1 or int(player_1) > 9:
-                filter_references.remove(player_1)
-                print("Введенное число находится за пределы нумерации.")
-
-            '''Логика для замены клеток на X'''
-
-            if player_1 == table_str1[0][1:2]:
-                table_str1.pop(int(player_1) - 1)
-                table_str1.insert(int(player_1) - 1, X)
-            elif player_1 == table_str1[1][1:2]:
-                table_str1.pop(int(player_1) - 1)
-                table_str1.insert(int(player_1) - 1, X)
-            elif player_1 == table_str1[2][1:2]:
-                table_str1.pop(int(player_1) - 1)
-                table_str1.insert(int(player_1) - 1, X)
-            elif player_1 == table_str2[0][1:2]:
-                table_str2.pop(int(player_1) - 4)
-                table_str2.insert(int(player_1) - 4, X)
-            elif player_1 == table_str2[1][1:2]:
-                table_str2.pop(int(player_1) - 4)
-                table_str2.insert(int(player_1) - 4, X)
-            elif player_1 == table_str2[2][1:2]:
-                table_str2.pop(int(player_1) - 4)
-                table_str2.insert(int(player_1) - 4, X)
-            elif player_1 == table_str3[0][1:2]:
-                table_str3.pop(int(player_1) - 7)
-                table_str3.insert(int(player_1) - 7, X)
-            elif player_1 == table_str3[1][1:2]:
-                table_str3.pop(int(player_1) - 7)
-                table_str3.insert(int(player_1) - 7, X)
-            elif player_1 == table_str3[2][1:2]:
-                table_str3.pop(int(player_1) - 7)
-                table_str3.insert(int(player_1) - 7, X)
 
             '''Поле для ввода данных в поле'''
             print()
@@ -133,7 +132,67 @@ def Game():
                     player_2 = input('Введите цифру клетки для 0 (1-9): ')
                     filter_references.add(player_2)
                     if type(int(player_2)):
-                        if len(filter_references) == pass_2:
+                        if int(player_2) < 1 or int(player_2) > 9:
+                            filter_references.remove(player_2)
+                            print("Введенное число находится")
+                            print('за пределы нумерации.')
+                        elif len(filter_references) == pass_2:
+                            '''Логика для замены клеток на 0'''
+
+                            if player_1 == table_str1[0][1:2]:
+                                table_str1.pop(int(player_1) - 1)
+                                table_str1.insert(int(player_1) - 1, X)
+                            elif player_1 == table_str1[1][1:2]:
+                                table_str1.pop(int(player_1) - 1)
+                                table_str1.insert(int(player_1) - 1, X)
+                            elif player_1 == table_str1[2][1:2]:
+                                table_str1.pop(int(player_1) - 1)
+                                table_str1.insert(int(player_1) - 1, X)
+                            elif player_1 == table_str2[0][1:2]:
+                                table_str2.pop(int(player_1) - 4)
+                                table_str2.insert(int(player_1) - 4, X)
+                            elif player_1 == table_str2[1][1:2]:
+                                table_str2.pop(int(player_1) - 4)
+                                table_str2.insert(int(player_1) - 4, X)
+                            elif player_1 == table_str2[2][1:2]:
+                                table_str2.pop(int(player_1) - 4)
+                                table_str2.insert(int(player_1) - 4, X)
+                            elif player_1 == table_str3[0][1:2]:
+                                table_str3.pop(int(player_1) - 7)
+                                table_str3.insert(int(player_1) - 7, X)
+                            elif player_1 == table_str3[1][1:2]:
+                                table_str3.pop(int(player_1) - 7)
+                                table_str3.insert(int(player_1) - 7, X)
+                            elif player_1 == table_str3[2][1:2]:
+                                table_str3.pop(int(player_1) - 7)
+                                table_str3.insert(int(player_1) - 7, X)
+                            if player_2 == table_str1[0][1:2]:
+                                table_str1.pop(int(player_2) - 1)
+                                table_str1.insert(int(player_2) - 1, zero)
+                            elif player_2 == table_str1[1][1:2]:
+                                table_str1.pop(int(player_2) - 1)
+                                table_str1.insert(int(player_2) - 1, zero)
+                            elif player_2 == table_str1[2][1:2]:
+                                table_str1.pop(int(player_2) - 1)
+                                table_str1.insert(int(player_2) - 1, zero)
+                            elif player_2 == table_str2[0][1:2]:
+                                table_str2.pop(int(player_2) - 4)
+                                table_str2.insert(int(player_2) - 4, zero)
+                            elif player_2 == table_str2[1][1:2]:
+                                table_str2.pop(int(player_2) - 4)
+                                table_str2.insert(int(player_2) - 4, zero)
+                            elif player_2 == table_str2[2][1:2]:
+                                table_str2.pop(int(player_2) - 4)
+                                table_str2.insert(int(player_2) - 4, zero)
+                            elif player_2 == table_str3[0][1:2]:
+                                table_str3.pop(int(player_2) - 7)
+                                table_str3.insert(int(player_2) - 7, zero)
+                            elif player_2 == table_str3[1][1:2]:
+                                table_str3.pop(int(player_2) - 7)
+                                table_str3.insert(int(player_2) - 7, zero)
+                            elif player_2 == table_str3[2][1:2]:
+                                table_str3.pop(int(player_2) - 7)
+                                table_str3.insert(int(player_2) - 7, zero)
                             pass_2 += 2
                             break
                         else:
@@ -141,68 +200,6 @@ def Game():
                 except ValueError or KeyError:
                     print("Вы ввели либо не целое число,либо не число.")
                     filter_references.remove(player_2)
-                    break
-
-            if int(player_2) < 1 or int(player_2) > 9:
-                filter_references.remove(player_2)
-                print("Введенное число находится за пределы нумерации.")
-
-            '''Логика для замены клеток на 0'''
-
-            if player_1 == table_str1[0][1:2]:
-                table_str1.pop(int(player_1) - 1)
-                table_str1.insert(int(player_1) - 1, X)
-            elif player_1 == table_str1[1][1:2]:
-                table_str1.pop(int(player_1) - 1)
-                table_str1.insert(int(player_1) - 1, X)
-            elif player_1 == table_str1[2][1:2]:
-                table_str1.pop(int(player_1) - 1)
-                table_str1.insert(int(player_1) - 1, X)
-            elif player_1 == table_str2[0][1:2]:
-                table_str2.pop(int(player_1) - 4)
-                table_str2.insert(int(player_1) - 4, X)
-            elif player_1 == table_str2[1][1:2]:
-                table_str2.pop(int(player_1) - 4)
-                table_str2.insert(int(player_1) - 4, X)
-            elif player_1 == table_str2[2][1:2]:
-                table_str2.pop(int(player_1) - 4)
-                table_str2.insert(int(player_1) - 4, X)
-            elif player_1 == table_str3[0][1:2]:
-                table_str3.pop(int(player_1) - 7)
-                table_str3.insert(int(player_1) - 7, X)
-            elif player_1 == table_str3[1][1:2]:
-                table_str3.pop(int(player_1) - 7)
-                table_str3.insert(int(player_1) - 7, X)
-            elif player_1 == table_str3[2][1:2]:
-                table_str3.pop(int(player_1) - 7)
-                table_str3.insert(int(player_1) - 7, X)
-            if player_2 == table_str1[0][1:2]:
-                table_str1.pop(int(player_2) - 1)
-                table_str1.insert(int(player_2) - 1, zero)
-            elif player_2 == table_str1[1][1:2]:
-                table_str1.pop(int(player_2) - 1)
-                table_str1.insert(int(player_2) - 1, zero)
-            elif player_2 == table_str1[2][1:2]:
-                table_str1.pop(int(player_2) - 1)
-                table_str1.insert(int(player_2) - 1, zero)
-            elif player_2 == table_str2[0][1:2]:
-                table_str2.pop(int(player_2) - 4)
-                table_str2.insert(int(player_2) - 4, zero)
-            elif player_2 == table_str2[1][1:2]:
-                table_str2.pop(int(player_2) - 4)
-                table_str2.insert(int(player_2) - 4, zero)
-            elif player_2 == table_str2[2][1:2]:
-                table_str2.pop(int(player_2) - 4)
-                table_str2.insert(int(player_2) - 4, zero)
-            elif player_2 == table_str3[0][1:2]:
-                table_str3.pop(int(player_2) - 7)
-                table_str3.insert(int(player_2) - 7, zero)
-            elif player_2 == table_str3[1][1:2]:
-                table_str3.pop(int(player_2) - 7)
-                table_str3.insert(int(player_2) - 7, zero)
-            elif player_2 == table_str3[2][1:2]:
-                table_str3.pop(int(player_2) - 7)
-                table_str3.insert(int(player_2) - 7, zero)
 
             '''Поле для ввода данных в поле'''
             print()
