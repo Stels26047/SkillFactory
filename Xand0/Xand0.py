@@ -92,31 +92,31 @@ def Game():
                 if table_str1[2] == '|X|':
                     print('\n'+'Игрок один выиграл.')
                     break
-            elif table_str2[0] == '|X|' and table_str2[1] == '|X|':
+            if table_str2[0] == '|X|' and table_str2[1] == '|X|':
                 if table_str2[2] == '|X|':
                     print('\n'+'Игрок один выиграл.')
                     break
-            elif table_str3[0] == '|X|' and table_str3[1] == '|X|':
+            if table_str3[0] == '|X|' and table_str3[1] == '|X|':
                 if table_str3[2] == '|X|':
                     print('\n'+'Игрок один выиграл.')
                     break
-            elif table_str1[0] == '|X|' and table_str2[0] == '|X|':
+            if table_str1[0] == '|X|' and table_str2[0] == '|X|':
                 if table_str3[0] == '|X|':
                     print('\n'+'Игрок один выиграл.')
                     break
-            elif table_str1[1] == '|X|' and table_str2[1] == '|X|':
+            if table_str1[1] == '|X|' and table_str2[1] == '|X|':
                 if table_str3[1] == '|X|':
                     print('\n'+'Игрок один выиграл.')
                     break
-            elif table_str1[2] == '|X|' and table_str2[2] == '|X|':
+            if table_str1[2] == '|X|' and table_str2[2] == '|X|':
                 if table_str3[2] == '|X|':
                     print('\n'+'Игрок один выиграл.')
                     break
-            elif table_str1[0] == '|X|' and table_str2[1] == '|X|':
+            if table_str1[0] == '|X|' and table_str2[1] == '|X|':
                 if table_str3[2] == '|X|':
                     print('\n'+'Игрок один выиграл.')
                     break
-            elif table_str1[2] == '|X|' and table_str2[1] == '|X|':
+            if table_str1[2] == '|X|' and table_str2[1] == '|X|':
                 if table_str3[0] == '|X|':
                     print('\n'+'Игрок один выиграл.')
                     break
@@ -218,31 +218,31 @@ def Game():
                 if table_str1[2] == '|0|':
                     print('\n'+'Игрок второй выиграл.')
                     break
-            elif table_str2[0] == '|0|' and table_str2[1] == '|0|':
+            if table_str2[0] == '|0|' and table_str2[1] == '|0|':
                 if table_str2[2] == '|0|':
                     print('\n'+'Игрок второй выиграл.')
                     break
-            elif table_str3[0] == '|0|' and table_str3[1] == '|0|':
+            if table_str3[0] == '|0|' and table_str3[1] == '|0|':
                 if table_str3[2] == '|0|':
                     print('\n'+'Игрок второй выиграл.')
                     break
-            elif table_str1[0] == '|0|' and table_str2[0] == '|0|':
+            if table_str1[0] == '|0|' and table_str2[0] == '|0|':
                 if table_str3[0] == '|0|':
                     print('\n'+'Игрок второй выиграл.')
                     break
-            elif table_str1[1] == '|0|' and table_str2[1] == '|0|':
+            if table_str1[1] == '|0|' and table_str2[1] == '|0|':
                 if table_str3[1] == '|0|':
                     print('\n'+'Игрок второй выиграл.')
                     break
-            elif table_str1[2] == '|0|' and table_str2[2] == '|0|':
+            if table_str1[2] == '|0|' and table_str2[2] == '|0|':
                 if table_str3[2] == '|0|':
                     print('\n'+'Игрок второй выиграл.')
                     break
-            elif table_str1[0] == '|0|' and table_str2[1] == '|0|':
+            if table_str1[0] == '|0|' and table_str2[1] == '|0|':
                 if table_str3[2] == '|0|':
                     print('\n'+'Игрок второй выиграл.')
                     break
-            elif table_str1[2] == '|0|' and table_str2[1] == '|0|':
+            if table_str1[2] == '|0|' and table_str2[1] == '|0|':
                 if table_str3[0] == '|0|':
                     print('\n'+'Игрок второй выиграл.')
                     break
