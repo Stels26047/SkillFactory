@@ -16,3 +16,22 @@
 Способность использовать на практике свои знания для решения ответов на вопрос.
 5.Планируете ли вы менять стратегию изучения последующих модулей?
 В зависимости от сложности вопрос возможно буду расширять свои знания в каких-то темах.
+
+1) the task of the project:
+Apply your knowledge of the pandas library to solve problems.
+2) the number of points scored in the quiz:
+26 points (27 points) I did not score one point due to my carelessness in noting the answers.
+The Jupiter laptop is commented out, the question where I put another answer.
+Although the decision I have a different answer is obtained.
+3) answers to questions of self-reflection:
+1. What part of your work were you most satisfied with?
+It was not easy, but I did it. Basically, I am satisfied with my work.
+2 What did not work out the way you wanted? What else is worth working on?
+At the end of the test in this module, I had to expand my knowledge in
+the NumPy library to solve the problems.
+3.What interesting and useful things did you learn in this module?
+It was especially new to explore the Numpy percentile library function.
+4. What is your main result during the passage of this project?
+The ability to put into practice one's knowledge to solve the answers to a question.
+5. Do you plan to change the strategy for studying subsequent modules?
+Depending on the complexity of the question, I will probably expand my knowledge in some topics.
