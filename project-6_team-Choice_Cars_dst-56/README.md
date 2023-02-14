@@ -1,1 +1,3 @@
 В данной работе был создан датафрейм из сайта auto.ru на основе,которого было сделано предсказание.Был произведен анализ по метрике MAPE.По которой в дальнейшем сделан вывод о лучшей модели.Были созданы 2 датасета в ходе работы(1 со ссылками про объявление,другой не очищенный датафрем с занесенными данными).
+
+In this work, a dataframe was created from the auto.ru site on the basis of which the prediction was made. An analysis was made using the MAPE metric. Based on which a conclusion was made about the best model. 2 datasets were created during the work (1 with links about the announcement, another non-purged dataframe with data entered).
